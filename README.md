@@ -14,8 +14,10 @@
 
 ## Installation
 ```bash
-npm install wxapp-fetch
+npm install wxapp-fetch --save
 ```
+
+[example](https://github.com/axetroy/wxapp-fetch/tree/master/example)
 
 ## Usage
 
@@ -41,7 +43,13 @@ wxFetch('https://www.google.com')
 git clone https://github.com/axetroy/wxapp-fetch.git
 cd ./wxapp-fetch
 yarn
+yarn start
 ```
+
+1. 打开微信web开发者工具， 加载wxapp-http/example目录
+2. 修改index.js
+
+欢迎PR.
 
 You can flow [Contribute Guide](https://github.com/axetroy/wxapp-fetch/blob/master/contributing.md)
 
