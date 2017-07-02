@@ -1,4 +1,6 @@
 # wxapp-fetch
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/wxapp-fetch.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/axetroy/wxapp-fetch.svg?branch=master)](https://travis-ci.org/axetroy/wxapp-fetch)
 [![Dependency](https://david-dm.org/axetroy/wxapp-fetch.svg)](https://david-dm.org/axetroy/wxapp-fetch)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
