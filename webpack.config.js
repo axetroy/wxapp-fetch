@@ -9,7 +9,7 @@ module.exports = {
   },
   output: {
     filename: '[name]/wxapp-fetch.js',
-    library: 'wxetch'F,
+    library: 'wxFetch',
     libraryTarget: 'umd'
   },
   resolve: {
