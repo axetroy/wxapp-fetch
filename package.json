@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "微信小程序fetch接口的实现",
   "main": "./dist/index.js",
+  "keywords": ["wx", "wxapp", "http", "fetch"],
   "scripts": {
     "test": "ava",
     "build": "webpack --display-error-details --progress --colors",
