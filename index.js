@@ -2,11 +2,18 @@
 
 import http from 'wxapp-http';
 
+const httpClient = http.create({
+  maxConcurrent: 10,
+  timeout: 0,
+  header: {},
+  dataType: 'json'
+});
+
 function generateResponse(res) {
   let header = res.header || {};
   let config = res.config || {};
   return {
-    ok: ((res.statusCode / 200) | 0) == 1, // 200-299
+    ok: ((res.statusCode / 200) | 0) === 1, // 200-299
     status: res.statusCode,
     statusText: res.errMsg,
     url: config.url,
@@ -31,7 +38,9 @@ function generateResponse(res) {
       entries: () => {
         let all = [];
         for (let key in header) {
-          all.push([key, header[key]]);
+          if (header.hasOwnProperty(key)) {
+            all.push([key, header[key]]);
+          }
         }
         return all;
       },
@@ -41,11 +50,11 @@ function generateResponse(res) {
   };
 }
 
-export default (typeof fetch == 'function'
+export default (typeof fetch === 'function'
   ? fetch.bind()
   : function(url, options) {
       options = options || {};
-      return http
+      return httpClient
         .request(options.method || 'get', url, options.body, options.headers)
         .then(res => Promise.resolve(generateResponse(res)))
         .catch(res => Promise.reject(generateResponse(res)));
