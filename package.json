@@ -10,7 +10,7 @@
     "fetch"
   ],
   "scripts": {
-    "test": "ava",
+    "test": "npm run build",
     "build": "webpack --display-error-details --progress --colors",
     "watch": "webpack --display-error-details --progress --colors --watch",
     "generate": "all-contributors generate",
