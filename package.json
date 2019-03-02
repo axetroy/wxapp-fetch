@@ -1,6 +1,6 @@
 {
   "name": "wxapp-fetch",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "微信小程序fetch接口的实现",
   "main": "./dist/wxapp-fetch.js",
   "keywords": [
