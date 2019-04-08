@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 [![Prettier](https://img.shields.io/badge/Code%20Style-Prettier-green.svg)](https://github.com/prettier/prettier)
 ![Node](https://img.shields.io/badge/node-%3E=6.0-blue.svg?style=flat-square)
-[![npm version](https://badge.fury.io/js/wxapp-fetch.svg)](https://badge.fury.io/js/wxapp-fetch)
+[![npm version](https://badge.fury.io/js/wxapp-fetch.svg)](https://badge.fury.io/js/wxapp-fetch) [![Greenkeeper badge](https://badges.greenkeeper.io/axetroy/wxapp-fetch.svg)](https://greenkeeper.io/)
 
 微信小程序的 fetch 接口实现
 
